@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palmeira Didática</title>
     <style>
-        /* Estilos visuais do site */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f5; /* Fundo cinza bem claro, quase branco */
-            color: #2c3e50; /* Cor do texto cinza escuro */
+            background-color: #f4f7f5;
+            color: #2c3e50;
             margin: 0;
             padding: 0;
             display: flex;
@@ -19,17 +18,17 @@
         }
 
         .container {
-            background-color: #ffffff; /* Caixa branca de fundo */
+            background-color: #ffffff;
             padding: 40px;
-            border-radius: 12px; /* Bordas arredondadas */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sombra suave */
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             text-align: center;
             max-width: 500px;
-            border-top: 8px solid #2e7d32; /* Barra verde bonita no topo (tema palmeira) */
+            border-top: 8px solid #2e7d32;
         }
 
         h1 {
-            color: #2e7d32; /* Título em verde floresta */
+            color: #2e7d32;
             margin-bottom: 15px;
             font-size: 28px;
         }
@@ -38,6 +37,7 @@
             font-size: 16px;
             line-height: 1.6;
             color: #555555;
+            margin-bottom: 25px;
         }
 
         .badge {
@@ -50,6 +50,47 @@
             display: inline-block;
             margin-bottom: 20px;
         }
+
+        /* --- ESTILO DOS BOTÕES --- */
+        .btn-group {
+            display: flex;
+            flex-direction: column; /* Coloca um botão embaixo do outro */
+            gap: 12px; /* Espaço entre os botões */
+        }
+
+        .btn {
+            display: block;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none; /* Remove o sublinhado do link */
+            border-radius: 8px;
+            transition: all 0.3s ease; /* Efeito suave ao passar o mouse */
+            cursor: pointer;
+        }
+
+        /* Botão Principal (Verde) */
+        .btn-primary {
+            background-color: #2e7d32;
+            color: white;
+            border: 2px solid #2e7d32;
+        }
+
+        .btn-primary:hover {
+            background-color: #1b5e20; /* Verde mais escuro no hover */
+            border-color: #1b5e20;
+        }
+
+        /* Botão Secundário (Transparente com borda) */
+        .btn-secondary {
+            background-color: transparent;
+            color: #2e7d32;
+            border: 2px solid #2e7d32;
+        }
+
+        .btn-secondary:hover {
+            background-color: #e8f5e9; /* Fundo verde bem clarinho no hover */
+        }
     </style>
 </head>
 <body>
@@ -58,7 +99,16 @@
         <span class="badge">Projeto Online</span>
         <h1>Palmeira Didática</h1>
         <p>Bem-vindo ao nosso espaço de aprendizado. Em breve, você encontrará aqui um conteúdo completo, interativo e didático sobre as palmeiras.</p>
+        
+        <!-- Bloco contendo os novos botões -->
+        <div class="btn-group">
+            <a href="#" class="btn btn-primary" onclick="alert('Funciona! Em breve aqui teremos o conteúdo didático.')">Explorar Conteúdo</a>
+            <a href="#" class="btn btn-secondary" onclick="alert('Funciona! Em breve aqui teremos informações sobre o projeto.')">Sobre o Projeto</a>
+        </div>
     </div>
+
+</body>
+</html>
 
 </body>
 </html>
